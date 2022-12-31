@@ -75,10 +75,17 @@ export class AppIndex extends LitElement {
             },
           },
           {
-            path: '/app-calc',
+            path: 'nhs-calc',
             component: 'app-calc',
             action: async () => {
               await import('./pages/app-calc.js');
+            },
+          },
+          {
+            path: 'blog/nhs-pension-should-i-opt-out',
+            component: 'app-blog',
+            action: async () => {
+              await import('./pages/app-blog.js');
             },
           }
         ],

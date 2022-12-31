@@ -9,9 +9,11 @@ export const styles = css`
     }
   }
 
-  main {
-    margin-top: 80px;
+  button.back {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-
 
 `;

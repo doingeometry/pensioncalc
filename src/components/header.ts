@@ -4,8 +4,8 @@ import { property, customElement } from 'lit/decorators.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 @customElement('app-header')
 export class AppHeader extends LitElement {
-  @property({ type: String }) title = 'PWA Starter';
-
+  @property({ type: String }) title = 'NHS Pension Calculator';
+  
   @property({ type: Boolean}) enableBack: boolean = false;
 
   static get styles() {
@@ -33,6 +33,7 @@ export class AppHeader extends LitElement {
         margin-bottom: 0;
         font-size: 20px;
         font-weight: bold;
+        margin-left: 10px;
       }
 
       nav a {

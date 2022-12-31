@@ -29,11 +29,13 @@ export class AppAbout extends LitElement {
 
         <sl-card>
           <h2>Did you know?</h2>
+          <sl-button size="small">Click me</sl-button>
 
           <p>PWAs have access to many useful APIs in modern browsers! These
             APIs have enabled many new types of apps that can be built as PWAs, such as advanced graphics editing apps, games,
             apps that use machine learning and more!
           </p>
+
 
           <p>Check out <a
               href="https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/handle-files">these

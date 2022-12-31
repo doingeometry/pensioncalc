@@ -14,7 +14,7 @@ export class AppHome extends LitElement {
 
   // For more information on using properties and state in lit
   // check out this link https://lit.dev/docs/components/properties/
-  @property() message = 'Welcome!';
+  @property() message = 'Welcome to the NHS Pension Calculator!';
 
   static get styles() {
     return [
@@ -31,6 +31,16 @@ export class AppHome extends LitElement {
       #infoCard {
         padding: 18px;
         padding-top: 0px;
+      }
+
+      #jHomeButtons {
+        display: flex;
+        justify-content: center;
+      }
+
+      #jHomeBlogButton,
+      #jHomeCalcButton {
+        margin: 10px;
       }
 
       pwa-install {
@@ -78,9 +88,9 @@ export class AppHome extends LitElement {
   share() {
     if ((navigator as any).share) {
       (navigator as any).share({
-        title: 'PWABuilder pwa-starter',
-        text: 'Check out the PWABuilder pwa-starter!',
-        url: 'https://github.com/pwa-builder/pwa-starter',
+        title: 'NHS Pension Calculator',
+        text: 'Check out this NHS Pension Calculator!',
+        url: 'https://pensioncalcs.co.uk',
       });
     }
   }
@@ -95,54 +105,41 @@ export class AppHome extends LitElement {
             <div slot="header">
               <h2>${this.message}</h2>
             </div>
-
             <p>
-              For more information on the PWABuilder pwa-starter, check out the
-              <a href="https://github.com/pwa-builder/pwa-starter/wiki/Getting-Started">
-                Documentation on Github</a>.
+              This tool is designed to help you estimate your pension benefits
+              under the 2015 NHS Pension scheme.  We hope you find this
+              calculator helpful in planning for your retirement.
             </p>
-
-            <p id="mainInfo">
-              Welcome to the
-              <a href="https://pwabuilder.com">PWABuilder</a>
-              pwa-starter! Be sure to head back to
-              <a href="https://pwabuilder.com">PWABuilder</a>
-              when you are ready to ship this PWA to the Microsoft Store, Google Play
-              and the Apple App Store!
-            </p>
-
             ${'share' in navigator
               ? html`<sl-button slot="footer" variant="primary" @click="${this.share}">Share this Starter!</sl-button>`
               : null}
+            <div id="jHomeButtons">
+              <sl-button href="${(import.meta as any).env.BASE_URL}nhs-calc" variant="primary" id="jHomeCalcButton">
+                  Go to Calculator
+              </sl-button>
+
+              <sl-button href="${(import.meta as any).env.BASE_URL}blog/nhs-pension-should-i-opt-out" variant="primary" outline id="jHomeBlogButton">
+                Should I opt out?
+              </sl-button>
+            </div>
           </sl-card>
 
           <sl-card id="infoCard">
-            <h2>Technology Used</h2>
-
-            <ul>
-              <li>
-                <a href="https://www.typescriptlang.org/">TypeScript</a>
-              </li>
-
-              <li>
-                <a href="https://lit.dev">lit</a>
-              </li>
-
-              <li>
-                <a href="https://shoelace.style/">Shoelace</a>
-              </li>
-
-              <li>
-                <a href="https://vaadin.github.io/vaadin-router/vaadin-router/demo/#vaadin-router-getting-started-demos"
-                  >Vaadin Router</a>
-              </li>
-            </ul>
+              <div slot="header">
+                <h2>Disclaimer</h2>
+              </div>
+              <p id="mainInfo">
+                Please note that this calculator
+                is for estimation purposes only and is not intended to provide an official estimate of
+                your pension benefits. If you want to get an official estimate, please contact a
+                professional or an official source. Thank you for using this tool!
+              </p>
+              <p id="jFurtherInfo">
+              The NHS 2015 pension scheme is based on an individual's salary and length of service. The amount of pension received is determined by multiplying an individual's final pensionable pay by their length of service and an accrual rate of 1/54th. The pension is paid out in the form of an annuity. It's important to note that the calculation of the NHS pension can vary based on individual circumstances. It's always a good idea to seek professional advice when planning for retirement.
+              </p>
           </sl-card>
-
-          <sl-button href="${(import.meta as any).env.BASE_URL}about" variant="primary">Navigate to About</sl-button>
         </div>
-
-        <pwa-install>Install PWA Starter</pwa-install>
+        <pwa-install>Install NHS Pension Calculator</pwa-install>
       </main>
     `;
   }
