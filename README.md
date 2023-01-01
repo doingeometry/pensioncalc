@@ -7,7 +7,7 @@ The NHS Pension calculator is a simple progressive web app. The app also contain
 I am submitting this project as a first version, but will continue to work on it in the future, especially if it manages to attract any organic traffic. For this reason the product is SEO-optimized: mobile optimized and high pagespeed. The blog section is also keyword-rich and caters to a question which according to some basic research may be easy to rank for. The app is designed specifically for the 2015 NHS Pension scheme, and presents the results in today's money, without accounting for inflation. It also provides users with a few notes about the calculations and the limitations of the app. It allows users to input their average salary and years in the scheme, and calculates their expected yearly pension based on the 2015 NHS Pension scheme. This calculation is performed when the user clicks the "Calculate Pension" button, and the resulting expected pension is displayed on the screen. The calculator app also includes a section with notes to provide additional context and information to the user about the calculations and the pension scheme. Overall, the app aims to help users better understand and plan for their pensions in the NHS. There are plenty of features that will be implemented.
 
 ### The future of the project:
-The future of pensioncalcs.co.uk involves the following updates:
+The future of pensioncalc.co.uk involves the following updates:
 - Make a better design, allow for light/dark mode.
 - Launch on Google Play Store and Apple Store.
 - Allow for separate entries for each year in the scheme, leading to more accurate estimates.
