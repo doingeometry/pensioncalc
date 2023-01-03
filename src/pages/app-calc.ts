@@ -87,10 +87,8 @@ export class AppCalc extends LitElement {
         return html`
           <app-header ?enableBack="${true}"></app-header>
             <main>
-
-            <h2>NHS Pension Calculator</h2>
-
             <div id="jNhsCalcWhole">
+            <h2>NHS Pension Calculator</h2>
               <sl-card id="jNhsCalc">
               <form @submit=${this.calculatePension}>
                 <sl-input class="label-on-left" type="number" label="Average Salary" id="average-salary" name="average-salary" help-text="Use gross, pensionable earnings." @change=${this.updateAverageSalary}></sl-input><br>
