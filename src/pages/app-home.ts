@@ -139,7 +139,8 @@ export class AppHome extends LitElement {
               </p>
           </sl-card>
         </div>
-        <pwa-install>Install PensionCalc</pwa-install>
+        <!-- installer commented out -->
+        <!-- <pwa-install>Install PensionCalc</pwa-install>-->
       </main>
     `;
   }
