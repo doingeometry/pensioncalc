@@ -111,7 +111,7 @@ export class AppHome extends LitElement {
               calculator helpful in planning for your retirement.
             </p>
             ${'share' in navigator
-              ? html`<sl-button slot="footer" variant="primary" @click="${this.share}">Share this Starter!</sl-button>`
+              ? html`<sl-button slot="footer" variant="primary" @click="${this.share}">Share PensionCalc!</sl-button>`
               : null}
             <div id="jHomeButtons">
               <sl-button href="${(import.meta as any).env.BASE_URL}nhs-calc" variant="primary" id="jHomeCalcButton">
