@@ -14,7 +14,7 @@ export class AppHome extends LitElement {
 
   // For more information on using properties and state in lit
   // check out this link https://lit.dev/docs/components/properties/
-  @property() message = 'Welcome to the NHS Pension Calculator!';
+  @property() message = 'Welcome to PensionCalc!';
 
   static get styles() {
     return [
@@ -88,9 +88,9 @@ export class AppHome extends LitElement {
   share() {
     if ((navigator as any).share) {
       (navigator as any).share({
-        title: 'NHS Pension Calculator',
-        text: 'Check out this NHS Pension Calculator!',
-        url: 'https://pensioncalcs.co.uk',
+        title: 'PensionCalc',
+        text: 'Estimate your NHS Pension & more!',
+        url: 'https://pensioncalc.co.uk',
       });
     }
   }
@@ -139,7 +139,7 @@ export class AppHome extends LitElement {
               </p>
           </sl-card>
         </div>
-        <pwa-install>Install NHS Pension Calculator</pwa-install>
+        <pwa-install>Install PensionCalc</pwa-install>
       </main>
     `;
   }
