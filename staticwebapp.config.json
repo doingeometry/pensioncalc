@@ -18,7 +18,8 @@
         "statusCode": 302
       },
       "404": {
-        "rewrite": "/404"
+        "redirect": "/404",
+        "statusCode": 404
       }
     },
     "globalHeaders": {
