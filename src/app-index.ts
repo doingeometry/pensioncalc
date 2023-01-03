@@ -83,9 +83,9 @@ export class AppIndex extends LitElement {
           },
           {
             path: 'blog/nhs-pension-should-i-opt-out',
-            component: 'app-blog',
+            component: 'app-blog1',
             action: async () => {
-              await import('./pages/app-blog.js');
+              await import('./pages/app-blog1.js');
             },
           }
         ],

@@ -7,7 +7,7 @@ import { styles as sharedStyles } from '../styles/shared-styles'
 
 import '@shoelace-style/shoelace/dist/components/card/card.js';
 
-@customElement('app-blog')
+@customElement('app-blog1')
 export class AppBlog extends LitElement {
     static styles = [
       sharedStyles,
