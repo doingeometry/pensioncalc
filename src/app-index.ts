@@ -3,8 +3,6 @@ import { customElement } from 'lit/decorators.js';
 import { Router } from '@vaadin/router';
 
 import './pages/app-home';
-import './pages/app-calc';
-import './pages/app-blog';
 import './components/header';
 import './styles/global.css';
 
