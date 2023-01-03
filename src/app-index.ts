@@ -75,10 +75,17 @@ export class AppIndex extends LitElement {
             },
           },
           {
-            path: 'nhs-calc',
-            component: 'app-calc',
+            path: '404',
+            component: 'app-404',
             action: async () => {
-              await import('./pages/app-calc.js');
+              await import('./pages/app-404.js');
+            },
+          },
+          {
+            path: 'nhs-calc',
+            component: 'app-calc1',
+            action: async () => {
+              await import('./pages/app-calc1.js');
             },
           },
           {
@@ -87,7 +94,7 @@ export class AppIndex extends LitElement {
             action: async () => {
               await import('./pages/app-blog1.js');
             },
-          }
+          },
         ],
       } as any,
     ]);

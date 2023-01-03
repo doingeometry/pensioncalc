@@ -10,7 +10,7 @@ import '@shoelace-style/shoelace/dist/components/input/input.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 import { serialize } from '@shoelace-style/shoelace/dist/utilities/form.js';
 
-@customElement('app-calc')
+@customElement('app-calc1')
 export class AppCalc extends LitElement {
     static styles = [
       sharedStyles,
