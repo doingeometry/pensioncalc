@@ -4,8 +4,8 @@ import { property, customElement } from 'lit/decorators.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 @customElement('app-header')
 export class AppHeader extends LitElement {
-  @property({ type: String }) title = 'NHS Pension Calculator';
-  
+  @property({ type: String }) title = 'PensionCalc';
+
   @property({ type: Boolean}) enableBack: boolean = false;
 
   static get styles() {
