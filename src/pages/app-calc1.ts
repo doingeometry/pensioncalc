@@ -158,7 +158,14 @@ export class AppCalc extends LitElement {
       this.averageSalary = parseFloat(data['average-salary']);
       this.yearsInScheme = parseFloat(data['years-in-scheme']);
 
-      this.expectedPension = this.averageSalary * this.yearsInScheme * (1/54);
+      const calculatedPension = this.averageSalary * this.yearsInScheme * (1/54);
+      
+      if (isNaN(calculatedPension)) {
+        this.expectedPension = 0;
+      } else {
+        this.expectedPension = calculatedPension;
+      }
+
       this.buttonPressed = true;
     }
 
