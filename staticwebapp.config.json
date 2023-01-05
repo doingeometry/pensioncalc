@@ -6,6 +6,9 @@
       },
       {
         "route": "/blog/nhs-pension-should-i-opt-out*"
+      },
+      {
+        "route": "/*"
       }
     ],
     "navigationFallback": {
