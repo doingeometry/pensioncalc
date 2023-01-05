@@ -52,6 +52,15 @@ export class AppCalc extends LitElement {
         }
       }
 
+      #jButtons {
+        display: flex;
+        justify-content: center;
+      }
+
+      #jButtonCalc {
+        margin-right: 12px;
+      }
+
     `]
 
     static get properties() {
@@ -93,7 +102,13 @@ export class AppCalc extends LitElement {
               <form @submit=${this.calculatePension}>
                 <sl-input class="label-on-left" type="number" label="Average Salary" id="average-salary" name="average-salary" help-text="Use gross, pensionable earnings." @change=${this.updateAverageSalary}></sl-input><br>
                 <sl-input class="label-on-left" type="number" label="Years in Scheme" id="years-in-scheme" name="years-in-scheme" help-text="Years where you were actively contributing to your NHS pension." @change=${this.updateYearsInScheme}></sl-input><br>
-                <sl-button variant="success" type="submit">Calculate Pension</sl-button>
+                <div id="jButtons">
+                  <sl-button id="jButtonCalc" variant="success" type="submit">Calculate Pension</sl-button>
+
+                  <sl-button href="${(import.meta as any).env.BASE_URL}blog/nhs-pension-should-i-opt-out" variant="primary" outline id="jHomeBlogButton">
+                  Should I opt out?
+                  </sl-button>
+                </div>
               </form>
               <p><span id="result" ?hidden=${!this.buttonPressed}>Expected Yearly Pension: ${this.expectedPension.toFixed(0)} £ per year <br><br> <em>(in today's money, not accounting for inflation)</em></span></p>
               </sl-card>
