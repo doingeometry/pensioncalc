@@ -12,8 +12,7 @@
     },
     {
       "route": "/*",
-      "redirect": "/404",
-      "statusCode": 404
+      "redirect": "/404"
     }
   ],
   "navigationFallback": {
