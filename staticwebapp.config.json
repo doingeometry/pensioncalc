@@ -8,8 +8,12 @@
       "route": "/blog/nhs-pension-should-i-opt-out"
     },
     {
+      "route": "/"
+    },
+    {
       "route": "/*",
-      "rewrite": "/404"
+      "redirect": "/404",
+      "statusCode": 404
     }
   ],
   "navigationFallback": {
@@ -20,10 +24,6 @@
     "401": {
       "redirect": "/login",
       "statusCode": 302
-    },
-    "404": {
-      "redirect": "/404",
-      "statusCode": 404
     }
   },
   "globalHeaders": {
