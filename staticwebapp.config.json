@@ -9,7 +9,7 @@
     },
     {
       "route": "/*",
-      "redirect": "/404",
+      "rewrite": "/404",
       "statusCode": 404
     }
   ],
