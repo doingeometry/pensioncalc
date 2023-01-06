@@ -19,10 +19,6 @@
       "401": {
         "redirect": "/login",
         "statusCode": 302
-      },
-      "404": {
-        "redirect": "/404",
-        "statusCode": 404
       }
     },
     "globalHeaders": {
