@@ -9,10 +9,6 @@
     },
     {
       "route": "/"
-    },
-    {
-      "route": "/*",
-      "redirect": "/404"
     }
   ],
   "navigationFallback": {
