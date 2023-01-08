@@ -99,10 +99,10 @@ export class AppIndex extends LitElement {
             path: '(.*)',
             component: 'app-404',
             redirect: '/404',
-            statusCode: 404,
             action: async () => {
               await import('./pages/app-404.js');
             },
+            statusCode: 404
           },
         ],
       } as any,
