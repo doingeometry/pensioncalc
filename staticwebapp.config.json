@@ -9,10 +9,6 @@
     },
     {
       "route": "/"
-    },
-    {
-      "route": "/*",
-      "statusCode": 404
     }
   ],
   "navigationFallback": {
