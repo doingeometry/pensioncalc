@@ -15,6 +15,7 @@
     },
     {
       "route": "(/*)",
+      "rewrite": "/404",
       "statusCode": 404
     }
   ],
