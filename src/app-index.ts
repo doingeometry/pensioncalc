@@ -102,7 +102,7 @@ export class AppIndex extends LitElement {
             action: async () => {
               await import('./pages/app-404.js');
             },
-            statusCode: 404
+            statusCode: 404 //TODO: still doesn't work!
           },
         ],
       } as any,

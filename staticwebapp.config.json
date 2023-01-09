@@ -11,7 +11,7 @@
       "route": "/"
     },
     {
-      "route": "/404",
+      "route": "(.*)",
       "statusCode": 404
     }
   ],
