@@ -2,21 +2,13 @@
   "trailingSlash": "auto",
   "routes": [
     {
-      "route": "/nhs-calc",
-      "statusCode": 200
+      "route": "/nhs-calc"
     },
     {
-      "route": "/blog/nhs-pension-should-i-opt-out",
-      "statusCode": 200
+      "route": "/blog/nhs-pension-should-i-opt-out"
     },
     {
-      "route": "/",
-      "statusCode": 200
-    },
-    {
-      "route": "(/*)",
-      "rewrite": "/404",
-      "statusCode": 404
+      "route": "/"
     }
   ],
   "navigationFallback": {
