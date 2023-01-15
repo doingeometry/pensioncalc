@@ -71,6 +71,7 @@ export class AppIndex extends LitElement {
             path: 'about',
             component: 'app-about',
             action: async () => {
+              document.title = 'About Us';
               await import('./pages/app-about/app-about.js');
             },
           },
@@ -78,6 +79,7 @@ export class AppIndex extends LitElement {
             path: 'nhs-calc',
             component: 'app-calc1',
             action: async () => {
+              document.title = 'NHS Pension Scheme Calculator - PensionCalc';
               await import('./pages/app-calc1.js');
             },
           },
@@ -85,6 +87,7 @@ export class AppIndex extends LitElement {
             path: 'blog/nhs-pension-should-i-opt-out',
             component: 'app-blog1',
             action: async () => {
+              document.title = 'Should I Opt Out of the NHS Pension Scheme? - PensionCalc';
               await import('./pages/app-blog1.js');
             },
           },
@@ -92,6 +95,7 @@ export class AppIndex extends LitElement {
             path: '404',
             component: 'app-404',
             action: async () => {
+              document.title = 'Page Not Found - PensionCalc';
               await import('./pages/app-404.js');
             },
           },
@@ -99,9 +103,9 @@ export class AppIndex extends LitElement {
             path: '(.*)',
             component: 'app-404',
             action: async () => {
+              document.title = 'Page Not Found - PensionCalc';
               await import('./pages/app-404.js');
             },
-            statusCode: 404
           },
         ],
       } as any,
