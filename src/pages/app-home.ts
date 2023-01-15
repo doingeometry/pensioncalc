@@ -97,7 +97,6 @@ export class AppHome extends LitElement {
 
   render() {
     return html`
-      <app-header></app-header>
 
       <main>
         <div id="welcomeBar">

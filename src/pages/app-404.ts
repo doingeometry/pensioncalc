@@ -50,7 +50,6 @@ export class AppBlog extends LitElement {
 
     render() {
         return html`
-          <app-header ?enableBack="${true}"></app-header>
           <main>
           <div id="j404">
           <sl-card>

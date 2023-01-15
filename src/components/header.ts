@@ -65,16 +65,18 @@ export class AppHeader extends LitElement {
 
   render() {
     return html`
-      <header>
+      <lazy-element>
+        <header>
 
-        <div id="back-button-block">
-          ${this.enableBack ? html`<sl-button href="${(import.meta as any).env.BASE_URL}">
-            Back
-          </sl-button>` : null}
+          <div id="back-button-block">
+            ${this.enableBack ? html`<sl-button href="${(import.meta as any).env.BASE_URL}">
+              Back
+            </sl-button>` : null}
 
-          <h1>${this.title}</h1>
-        </div>
-      </header>
+            <h1>${this.title}</h1>
+          </div>
+        </header>
+      </lazy-element>
     `;
   }
 }

@@ -20,6 +20,11 @@ export class AppBlog extends LitElement {
         flex-direction: column;
       }
 
+      #jCalcLink {
+        display: flex;
+        justify-content: center;
+      }
+
       sl-card::part(footer) {
         display: flex;
         justify-content: flex-end;
@@ -49,13 +54,15 @@ export class AppBlog extends LitElement {
 
     render() {
         return html`
-          <app-header ?enableBack="${true}"></app-header>
           <main>
           <div id="jBlog1">
-          <h2>Should I opt out of the NHS Pension?</h2>
+          <h2>Should I Opt Out of the NHS Pension Scheme?</h2>
           <sl-card>
             <h3>The Importance of Retirement Planning and the Role of the NHS Pension Scheme</h3>
             <p>Retirement planning is a <strong>crucial</strong> aspect of financial planning and is necessary to ensure you have the resources you need for a comfortable and secure retirement. One of the main tools for retirement planning in the UK is the National Health Service (NHS) pension scheme, which offers various benefits to eligible NHS employees. In this article, we will examine the benefits of the NHS pension scheme and the potential consequences of opting out.</p>
+            <div id="jCalcLink">
+              <p>Use our <a href="/nhs-calc">NHS Pension Calculator</a> to estimate your pension at retirement.</p>
+            </div>
             <h3>The Benefits of the NHS Pension Scheme</h3>
             <p>The NHS pension scheme is a <strong>defined benefit pension</strong> that provides a guaranteed income in retirement and death in service benefits to its members. The amount of pension received is based on an individual's salary and length of service, and it is paid every four weeks in the form of an annuity. In addition to the regular pension payments, the NHS pension scheme also offers a range of benefits, including survivor benefits for a spouse, civil partner, or nominated beneficiary.</p>
             <h3>Even if You Don't Plan to Retire in the UK, the NHS Pension is a Good Thing for You</h3>

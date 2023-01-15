@@ -94,7 +94,6 @@ export class AppCalc extends LitElement {
 
     render() {
         return html`
-          <app-header ?enableBack="${true}"></app-header>
             <main>
             <div id="jNhsCalcWhole">
             <h2>NHS Pension Calculator</h2>
